@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KalkulatorPolPowirzchni", "KalkulatorPolPowirzchni\KalkulatorPolPowirzchni.csproj", "{478FBB3D-24DD-4DBB-AE2B-0EDBCD8D2C67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KalkulatorPolPowirzchni.Tests", "KalkulatorPolPowirzchni.Tests\KalkulatorPolPowirzchni.Tests.csproj", "{E602133B-7F12-4120-B00A-68ACE07F8834}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{478FBB3D-24DD-4DBB-AE2B-0EDBCD8D2C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{478FBB3D-24DD-4DBB-AE2B-0EDBCD8D2C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{478FBB3D-24DD-4DBB-AE2B-0EDBCD8D2C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{478FBB3D-24DD-4DBB-AE2B-0EDBCD8D2C67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E602133B-7F12-4120-B00A-68ACE07F8834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E602133B-7F12-4120-B00A-68ACE07F8834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E602133B-7F12-4120-B00A-68ACE07F8834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E602133B-7F12-4120-B00A-68ACE07F8834}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
