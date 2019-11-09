@@ -13,6 +13,7 @@ namespace KalkulatorPolPowirzchni
         public void selectChanged(object sender, EventArgs args)
         {
             var figure = figuresNames.SelectedValue;
+           
             switch (figure)
             {
                 case "Kwadrat":
@@ -26,10 +27,10 @@ namespace KalkulatorPolPowirzchni
                     funcLabel.Text = "a h (podstawa) (wysokość)";
                     break;
                 case "Trójkąt równoramienny":
-                    funcLabel.Text = "a (ramię)";
+                    funcLabel.Text = "a (ramię - jedno z dwóch takich samych)";
                     break;
                 case "Trójkąt prostokątny":
-                    funcLabel.Text = "a b (bok) (bok)";
+                    funcLabel.Text = "a b (przyprostokątna) (przyprostokątna)";
                     break;
                 case "Trapez":
                     funcLabel.Text = "a b h (podstawa) (podstawa) (wysokość)";
@@ -46,35 +47,35 @@ namespace KalkulatorPolPowirzchni
             switch (figure)
             {
                 case "Kwadrat":
-                    countedLabel.Text = new Square().calculateArea(float.Parse(txtBoxValues.Text)).ToString();
+                    countedLabel.Text = "Pole powierzchni kwadratu wynosi: " + new Square().calculateArea(float.Parse(txtBoxValues.Text)).ToString();
                     break;
 
                 case "Prostokąt":
-                    countedLabel.Text = divideTextForValues(2,txtBoxValues.Text, "rect").ToString();
+                    countedLabel.Text = "Pole powierzchni prostokąta wynosi: " + divideTextForValues(2,txtBoxValues.Text, "rect").ToString();
                     break;
 
                 case "Trójkąt":
-                    countedLabel.Text = divideTextForValues(2,txtBoxValues.Text, "tria").ToString();
+                    countedLabel.Text = "Pole powierzchni trójkąta wynosi: " + divideTextForValues(2,txtBoxValues.Text, "tria").ToString();
                     break;
 
                 case "Trójkąt równoramienny":
-                    countedLabel.Text = new IsoscelesTriangle().calculateArea(float.Parse(txtBoxValues.Text)).ToString();
+                    countedLabel.Text = "Pole powierzchni trójkąta równoramiennego wynosi: " + new IsoscelesTriangle().calculateArea(float.Parse(txtBoxValues.Text)).ToString();
                     break;
 
                 case "Trójkąt równoboczny":
-                    countedLabel.Text = new EquilateralTriangle().calculateArea(float.Parse(txtBoxValues.Text)).ToString();
+                    countedLabel.Text = "Pole powierzchni trójkąta równobocznego wynosi: " + new EquilateralTriangle().calculateArea(float.Parse(txtBoxValues.Text)).ToString();
                     break;
 
                 case "Trójkąt prostokątny":
-                    countedLabel.Text = divideTextForValues(2,txtBoxValues.Text, "rtri").ToString();
+                    countedLabel.Text = "Pole powierzchni trójkąta prostokątnego wynosi: " + divideTextForValues(2,txtBoxValues.Text, "rtri").ToString();
                     break;
 
                 case "Trapez":
-                    countedLabel.Text = divideTextForValues(3,txtBoxValues.Text, "trap").ToString();
+                    countedLabel.Text = "Pole powierzchni trapezu wynosi: " + divideTextForValues(3,txtBoxValues.Text, "trap").ToString();
                     break;
 
                 case "Okrąg":
-                    countedLabel.Text = new Circle().calculateArea(float.Parse(txtBoxValues.Text)).ToString();
+                    countedLabel.Text = "Pole powierzchni okręgu wynosi: " + new Circle().calculateArea(float.Parse(txtBoxValues.Text)).ToString();
                     break;
             }
 
