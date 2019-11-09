@@ -46,6 +46,18 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Figure.cs" />
+    <Compile Include="Models\Triangle.cs" />
+    <Compile Include="Models\Circle.cs" />
+    <Compile Include="Models\EquilateralTriangle.cs" />
+    <Compile Include="Models\Square.cs" />
+    <Compile Include="Models\IsoscelesTriangle.cs" />
+    <Compile Include="Models\Rectangle.cs" />
+    <Compile Include="Models\Trapeze.cs" />
+    <Compile Include="Models\RectangularTriangle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

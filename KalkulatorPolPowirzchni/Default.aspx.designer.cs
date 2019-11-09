@@ -16,7 +16,11 @@ namespace KalkulatorPolPowirzchni {
 		protected System.Web.UI.HtmlControls.HtmlForm form1;
 		
 		protected System.Web.UI.WebControls.DropDownList figuresNames;
-		
+
 		protected System.Web.UI.WebControls.Label funcLabel;
-	}
+
+        protected System.Web.UI.WebControls.TextBox txtBoxValues;
+
+        protected System.Web.UI.WebControls.Label countedLabel;
+    }
 }
