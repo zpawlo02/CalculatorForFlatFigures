@@ -43,41 +43,49 @@ namespace KalkulatorPolPowirzchni
 
         public void calculate(object sender, EventArgs args)
         {
-            var figure = figuresNames.SelectedValue;
-            switch (figure)
+            try
             {
-                case "Kwadrat":
-                    countedLabel.Text = "Pole powierzchni kwadratu wynosi: " + new Square().calculateArea(float.Parse(txtBoxValues.Text)).ToString();
-                    break;
+                var figure = figuresNames.SelectedValue;
+                switch (figure)
+                {
+                    case "Kwadrat":
+                        countedLabel.Text = "Pole powierzchni kwadratu wynosi: " + new Square().calculateArea(float.Parse(txtBoxValues.Text)).ToString();
+                        break;
 
-                case "Prostokąt":
-                    countedLabel.Text = "Pole powierzchni prostokąta wynosi: " + divideTextForValues(2,txtBoxValues.Text, "rect").ToString();
-                    break;
+                    case "Prostokąt":
+                        countedLabel.Text = "Pole powierzchni prostokąta wynosi: " + divideTextForValues(2, txtBoxValues.Text, "rect").ToString();
+                        break;
 
-                case "Trójkąt":
-                    countedLabel.Text = "Pole powierzchni trójkąta wynosi: " + divideTextForValues(2,txtBoxValues.Text, "tria").ToString();
-                    break;
+                    case "Trójkąt":
+                        countedLabel.Text = "Pole powierzchni trójkąta wynosi: " + divideTextForValues(2, txtBoxValues.Text, "tria").ToString();
+                        break;
 
-                case "Trójkąt równoramienny":
-                    countedLabel.Text = "Pole powierzchni trójkąta równoramiennego wynosi: " + new IsoscelesTriangle().calculateArea(float.Parse(txtBoxValues.Text)).ToString();
-                    break;
+                    case "Trójkąt równoramienny":
+                        countedLabel.Text = "Pole powierzchni trójkąta równoramiennego wynosi: " + new IsoscelesTriangle().calculateArea(float.Parse(txtBoxValues.Text)).ToString();
+                        break;
 
-                case "Trójkąt równoboczny":
-                    countedLabel.Text = "Pole powierzchni trójkąta równobocznego wynosi: " + new EquilateralTriangle().calculateArea(float.Parse(txtBoxValues.Text)).ToString();
-                    break;
+                    case "Trójkąt równoboczny":
+                        countedLabel.Text = "Pole powierzchni trójkąta równobocznego wynosi: " + new EquilateralTriangle().calculateArea(float.Parse(txtBoxValues.Text)).ToString();
+                        break;
 
-                case "Trójkąt prostokątny":
-                    countedLabel.Text = "Pole powierzchni trójkąta prostokątnego wynosi: " + divideTextForValues(2,txtBoxValues.Text, "rtri").ToString();
-                    break;
+                    case "Trójkąt prostokątny":
+                        countedLabel.Text = "Pole powierzchni trójkąta prostokątnego wynosi: " + divideTextForValues(2, txtBoxValues.Text, "rtri").ToString();
+                        break;
 
-                case "Trapez":
-                    countedLabel.Text = "Pole powierzchni trapezu wynosi: " + divideTextForValues(3,txtBoxValues.Text, "trap").ToString();
-                    break;
+                    case "Trapez":
+                        countedLabel.Text = "Pole powierzchni trapezu wynosi: " + divideTextForValues(3, txtBoxValues.Text, "trap").ToString();
+                        break;
 
-                case "Okrąg":
-                    countedLabel.Text = "Pole powierzchni okręgu wynosi: " + new Circle().calculateArea(float.Parse(txtBoxValues.Text)).ToString();
-                    break;
+                    case "Okrąg":
+                        countedLabel.Text = "Pole powierzchni okręgu wynosi: " + new Circle().calculateArea(float.Parse(txtBoxValues.Text)).ToString();
+                        break;
+                }
             }
+            catch
+            {
+
+            }
+            
 
         }
 

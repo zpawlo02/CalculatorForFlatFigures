@@ -3,7 +3,7 @@
 <html>
 <head runat="server">
     <meta charset="UTF-8">
-	<title>Default</title>
+	<title>Kalkulator pól powierzchni</title>
 </head>
 <body>
 	<form id="form1" runat="server">
